@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Helvetica, Arial, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Time */
+.time {
+  margin-top: 90px;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #555;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+.dot.active {
+  background: #fff;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-bottom: 60px;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.btn.lap {
+  background: #2c2c2e;
+  color: #777;
+}
+
+.btn.start {
+  background: #0a3;
+  color: #0f0;
+}
+
+.btn.stop {
+  background: #3a0a0a;
+  color: #ff3b30;
+}
+
+.btn.disabled {
+  opacity: 0.5;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid #222;
+  font-size: 11px;
+  color: #777;
+}
+
+.tab.active {
+  color: #ff9f0a;
+}

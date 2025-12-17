@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Stopwatch</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Time Display -->
+    <div class="time" id="timeDisplay">
+      00:00.00
+    </div>
+
+    <!-- Page dots -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <div class="btn lap disabled">Lap</div>
+      <div class="btn start">Start</div>
+    </div>
+
+    <!-- Bottom Tabs -->
+    <div class="tabs">
+      <div class="tab">World Clock</div>
+      <div class="tab">Alarms</div>
+      <div class="tab active">Stopwatch</div>
+      <div class="tab">Timers</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
